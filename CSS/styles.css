@@ -1,0 +1,99 @@
+/* @import "reset.css"; */
+body{
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("https://cdnportal.mobalytics.gg/production/2021/06/64779e0a-league-of-legends-game-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+}
+h1{
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+p {
+  margin-top: -15px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+h3{
+  font-size: 20px;
+  text-decoration: underline;
+}
+form{
+  display : flex;
+  flex-direction: column;
+  padding: 20px 50px;
+  color : white;
+  border-radius: 15px;
+  background-color: rgba(0,20,50,0.7);
+}
+
+input {
+  margin: 8px 5px;
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+input:focus{
+  outline:none;
+  box-shadow: 0 0 0 2px rgba(100,100,255, 0.8) inset;
+}
+
+input::placeholder{
+  color : rgba(0,0,0,0.5);
+  font-weight : bold;
+}
+
+input[type=radio] {
+  margin: 0px 20px;
+}
+
+label{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+select{
+  margin: 8px 5px;
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+select:focus{
+  outline:none;
+  box-shadow: 0 0 0 2px rgba(100,100,255, 0.8) inset;
+}
+
+#radio-box{
+  background-color:red;
+  margin: 20px;
+}
+textarea{
+  height : auto;
+  margin: 8px 5px;
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+textarea:focus{
+  outline:none;
+  box-shadow: 0 0 0 2px rgba(100,100,255, 0.8) inset;
+}
+#comment{
+  margin-left:10px;
+  align-self: flex-start;
+}
+#submit{
+  color: rgba(0,100,255,0.75);
+  font-weight: bold;
+}

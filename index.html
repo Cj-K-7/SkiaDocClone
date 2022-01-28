@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/styles.css" />
+  <title>Random Choice Picker</title>
+</head>
+
+<h1 id="title">Tier Survey Form</h1>
+<p id="description">this is League of Legends Tier survey. Thank you for taking the time to fullfill this form.</p>
+<form id="survey-form">
+  <h3>About You</h3>
+  <label id="name-label" for="name"></label>
+  <input id="name" type="text" placeholder="Summoner's Name" name="name" required>
+  <br>
+  <label id="name-label" for="email"></label>
+  <input id="email" type="email" placeholder="E-mail" name="email" required>
+  <br>
+    <h3>RANK</h3>
+  <label for="dropdown">Tier</label>
+  <select id="dropdown" required>
+    <option value="Iron">Iron</option>
+    <option value="Bronze">Bronze</option>
+    <option value="Silver">Silver</option>
+    <option value="Gold">Gold</option>
+    <option value="Platinum">Platinum</option>
+    <option value="Diamond">Diamond</option>
+    <option value="Master">Master</option>
+    <option value="GrandMaster">GrandMaster</option>
+    <option value="Challenger">Challenger</option>
+  </select>
+  <label id="name-label" for="number">divisions</label>
+  <input id="number" type="number" placeholder="1~4" min="1" max="4" name="number" required>
+  <br>
+  <div>
+  <h3>Main Position</h3>
+    <label for="TOP">
+      <input id="TOP" value="TOP" type="radio" name="position" required>TOP
+    </label>
+
+    <label for="JNG">
+      <input id="JNG" value="JNG" type="radio" name="position">JUNGLE
+    </label>
+    <label for="MID">
+      <input id="MID" value="MID" type="radio" name="position">MID
+    </label>
+    <label for="AD">
+      <input id="AD" value="AD" type="radio" name="position">AD-Carry
+    </label>
+    <label for="SUP">
+      <input id="SUP" value="SUP" type="radio" name="position">SUP
+    </label>
+  </div>
+<br>
+  <div>
+  <h3>Classes you prefer</h3>
+        <label for="checkbox">
+       <input type="checkbox" value="none" name="class" checked>don't Care
+    </label>
+    <label for="checkbox">
+       <input type="checkbox" value="fighter" name="class">Fighter
+    </label>
+      <label for="checkbox">
+       <input type="checkbox" value="tank" name="class">Tank
+    </label>
+      <label for="checkbox">
+       <input type="checkbox" value="Slayer" name="class">Slayer
+    </label>
+      <label for="checkbox">
+       <input type="checkbox" value="marksman" name="class">Marksman
+    </label>
+          <label for="checkbox">
+       <input type="checkbox" value="mage" name="class">Mage
+    </label>
+              <label for="checkbox">
+       <input type="checkbox" value="Controller" name="class">Controller
+    </label>
+    </div>
+  <br>
+  <label id="comment" for="comment">Please leave a comment
+  </label>
+  <textarea name="comment"></textarea>
+  <input id="submit" type="submit" value="SUBMIT">
+</form>
+</html>
