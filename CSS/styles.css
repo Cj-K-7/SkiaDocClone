@@ -1,99 +1,110 @@
 /* @import "reset.css"; */
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
 body{
-  text-align: center;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  background: url("https://cdnportal.mobalytics.gg/production/2021/06/64779e0a-league-of-legends-game-bg.png");
+  margin:0px;
+  background: url("https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  background-position: center;
+  font-family: 'Supermercado One', cursive;
 }
-h1{
-  color: white;
-  text-shadow: 1px 1px 2px black;
+header {
+  background-color: white;
+  position: fixed;
+  top:0;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-p {
-  margin-top: -15px;
-  color: white;
-  text-shadow: 1px 1px 2px black;
+header div{
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
 }
-h3{
-  font-size: 20px;
-  text-decoration: underline;
+header h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+#header-img{
+  padding-right: 20px;
+  width: 80px;
+  height: auto;
+}
+#nav-bar{
+  display: flex;
+  padding-right: 30px;
+}
+#nav-bar li{
+  list-style: none;
+  margin: 0px 15px;
+}
+#nav-bar li a:link{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+#nav-bar li a:visited{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255,255,255,0.7);
+  font-size: 18px;
+}
+main div{
+  margin: 0px 200px;
+}
+main h3{
+  font-size: 3.5em;
+  margin-bottom: 25px;
+}
+#video{
+  width: 900px;
+  height: 506px;
 }
 form{
-  display : flex;
-  flex-direction: column;
-  padding: 20px 50px;
-  color : white;
-  border-radius: 15px;
-  background-color: rgba(0,20,50,0.7);
+  margin: 20px 0px;
+  padding: 20px 40px;
+  border-radius: 16px;
+  background-color: rgba(255,255,255,0.7);
 }
-
-input {
-  margin: 8px 5px;
-  padding: 10px 10px;
-  border: 0px;
-  border-radius: 8px;
-  font-size: 16px;
-  text-align: center;
-}
-input:focus{
-  outline:none;
-  box-shadow: 0 0 0 2px rgba(100,100,255, 0.8) inset;
-}
-
-input::placeholder{
-  color : rgba(0,0,0,0.5);
-  font-weight : bold;
-}
-
-input[type=radio] {
-  margin: 0px 20px;
-}
-
-label{
-  font-size: 18px;
-  font-weight: 500;
-}
-
-select{
-  margin: 8px 5px;
-  padding: 10px 10px;
-  border: 0px;
-  border-radius: 8px;
-  font-size: 16px;
-  text-align: center;
-}
-
-select:focus{
-  outline:none;
-  box-shadow: 0 0 0 2px rgba(100,100,255, 0.8) inset;
-}
-
-#radio-box{
-  background-color:red;
-  margin: 20px;
-}
-textarea{
-  height : auto;
-  margin: 8px 5px;
-  padding: 10px 10px;
-  border: 0px;
-  border-radius: 5px;
-  font-size: 16px;
-}
-textarea:focus{
-  outline:none;
-  box-shadow: 0 0 0 2px rgba(100,100,255, 0.8) inset;
-}
-#comment{
-  margin-left:10px;
-  align-self: flex-start;
-}
-#submit{
-  color: rgba(0,100,255,0.75);
+form input[type="email"]{
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 6px;
   font-weight: bold;
+}
+form input[type="submit"]{
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 6px;
+  font-weight: bold;
+}
+#category{
+  display: flex;
+  margin-bottom: 50px;
+}
+#category div{
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  border-radius: 16px;
+}
+.guitars{
+  border-radius: 16px;
+  width: 250px;
+  height: 250px;
 }
