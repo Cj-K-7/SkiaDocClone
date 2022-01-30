@@ -1,110 +1,165 @@
-/* @import "reset.css"; */
-@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
 
 body{
-  margin:0px;
-  background: url("https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: 'Supermercado One', cursive;
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden; 
+  line-height: 30px;
+  color: rgb(48, 48, 48);
+  font-weight: 600;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 0.6px;
 }
-header {
-  background-color: white;
+#navbar{
   position: fixed;
-  top:0;
-  width: 100vw;
-  height: 80px;
+  width: 320px;
+  left : 0px;
+  top : 0px;
+}
+
+#logo{
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+#navbar header{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding: 12px;
+  font-size: 32px;
+  font-family: 'Caveat', cursive;
+  color: rgb(80, 175, 255);
 }
-header div{
-  padding-left: 20px;
-  display: flex;
-  align-items: center;
+#navbar ul li{
+  padding : 12px 20px;
 }
-header h2{
-  font-size: 30px;
-  font-weight: bold;
+#navbar ul li a{
+  font-size: 20px;
+  text-decoration: none;
 }
-#header-img{
-  padding-right: 20px;
-  width: 80px;
-  height: auto;
+#navbar ul li a:link{
+  color: black;
 }
-#nav-bar{
-  display: flex;
-  padding-right: 30px;
+#navbar ul li a:visited{
+  color: black;
 }
-#nav-bar li{
+#navbar ul li a:hover{
+  color: rgb(80, 175, 255);
+}
+
+#main-doc{
+  max-width: 100%;
+  margin : 40px 0px;
+  margin-left : 320px;
+  padding: 0px 20px;
+}
+.main-section{
+  margin-bottom : 80px;
+}
+.main-section header{
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 28px;
+  color: rgb(78, 78, 78);
+}
+.main-section header:hover::after{
+  content: "#";
+  color: rgb(80, 175, 255);
+}
+.main-section h3{
+  font-size: 28px;
+  font-weight: 700;
+  margin: 28px 0px;
+}
+.main-section h4{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 24px 0px;
+}
+.main-section blockquote, .main-section pre{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main-section blockquote{
+  margin: 12px 20px;
+  padding : 8px 22px;
+  width: fit-content;
+  background-color: rgb(254, 255, 193);
+}
+.main-section code{
+  padding: 2px 6px;
+  border: 0.2px solid rgb(180, 180, 180);
+  border-radius: 6px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+  background-color: rgb(240, 240, 240);
+}
+.main-section pre{
+  margin: 10px 10px;
+  padding : 18px 26px;
+  border-radius: 10px;
+  background-color: rgb(220, 251, 255);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) inset;
+  overflow-x: hidden; 
+}
+.main-section ul{
+  margin: 16px 8px;
+}
+.main-section li {
   list-style: none;
-  margin: 0px 15px;
 }
-#nav-bar li a:link{
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
+.main-section li::before {
+  margin-right: 5px;
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-image: url("https://shopify.github.io/react-native-skia/img/logo.png");
+  background-size: cover;
+}
+table{
+  margin-top: 16px;
+  text-align: center;
+}
+table thead{
+  border-bottom: 1px solid black;
+}
+table td{
+  padding: 5px 10px;
+  letter-spacing: 1px;
+}
+hr {
+  margin-bottom: 80px;
+  border: none;
+  border-top: 5px double rgba(80, 176, 255, 0.5);
+  color: rgba(80, 175, 255, 0.5);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+hr:after {
+  font-family: 'Caveat', cursive;
+  background: #fff;
+  content: 'Skia';
+  padding: 0 4px;
+  position: relative;
+  top: -18px;
 }
 
-#nav-bar li a:visited{
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-}
-
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 80px;
-  width: 100%;
-  height: auto;
-  background-color: rgba(255,255,255,0.7);
-  font-size: 18px;
-}
-main div{
-  margin: 0px 200px;
-}
-main h3{
-  font-size: 3.5em;
-  margin-bottom: 25px;
-}
-#video{
-  width: 900px;
-  height: 506px;
-}
-form{
-  margin: 20px 0px;
-  padding: 20px 40px;
-  border-radius: 16px;
-  background-color: rgba(255,255,255,0.7);
-}
-form input[type="email"]{
-  padding: 10px 20px;
-  border: 0;
-  border-radius: 6px;
-  font-weight: bold;
-}
-form input[type="submit"]{
-  padding: 10px 20px;
-  border: 0;
-  border-radius: 6px;
-  font-weight: bold;
-}
-#category{
-  display: flex;
-  margin-bottom: 50px;
-}
-#category div{
-  margin: 0px 20px;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  align-items: center;
-  border-radius: 16px;
-}
-.guitars{
-  border-radius: 16px;
-  width: 250px;
-  height: 250px;
+@media screen and (max-width: 1000px){
+  #navbar{
+    position: static;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #main-doc{
+    max-width: 100%;
+    margin : 0px;
+    padding: 0px 20px;
+  }
 }
